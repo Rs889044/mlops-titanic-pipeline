@@ -1,0 +1,17 @@
+stages:
+  process_data:
+    cmd: spark-submit src/process_data.py --input_path_train data/raw/train.csv 
+      --input_path_test data/raw/test.csv --output_path data/processed
+    deps:
+    - data/raw
+    - src/process_data.py
+    outs:
+    - data/processed
+  train_model:
+    cmd: spark-submit src/train_model.py --input_path data/processed 
+      --output_path models/spark-logistic-regression
+    deps:
+    - data/processed
+    - src/train_model.py
+    outs:
+    - models/spark-logistic-regression
