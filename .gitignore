@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Spark & Hadoop
+logs/
+metastore_db/
+
+# DVC
+.dvc/cache/
+
+# Data - We will track data with DVC, not Git!
+# Ignore the contents of the data directories...
+data/raw/*
+data/processed/*
+
+# ...but DON'T ignore the .dvc pointer files or placeholder .gitignore files
+!data/raw/*.dvc
+!data/processed/*.dvc
+!data/raw/.gitignore
+!data/processed/.gitignore
+
+# Notebooks
+.ipynb_checkpoints/
