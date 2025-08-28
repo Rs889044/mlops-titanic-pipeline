@@ -7,7 +7,7 @@ import pandas as pd
 
 # <<< --- ADD THIS LINE --- >>>
 # Tell the app where to find the MLflow server
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("http://host.docker.internal:5000")
 
 # 1. Define the input data schema using Pydantic
 class Passenger(BaseModel):

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/418591468382662968/b25a4b49e4214df9bc3291b6f5e91a8f/artifacts
+end_time: 1756380286220
+entry_point_name: ''
+experiment_id: '418591468382662968'
+lifecycle_stage: active
+run_id: b25a4b49e4214df9bc3291b6f5e91a8f
+run_name: nosy-crane-445
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756380252270
+status: 3
+tags: []
+user_id: rajatsharma

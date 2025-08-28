@@ -20,21 +20,20 @@ stages:
       size: 20932
       nfiles: 8
   train_model:
-    cmd: spark-submit src/train_model.py --input_path data/processed 
+    cmd: spark-submit src/train_model.py --input_path_train data/raw/train.csv 
       --output_path models/spark-logistic-regression
     deps:
-    - path: data/processed
+    - path: data/raw/train.csv
       hash: md5
-      md5: 4d5f31894bea7285b4e5185c422c8505.dir
-      size: 20932
-      nfiles: 8
+      md5: c19848b60e205449b86664d3371d1638
+      size: 61420
     - path: src/train_model.py
       hash: md5
-      md5: 5975253657dbeccd8336b33e01251320
-      size: 5143
+      md5: 0bd6f9b3b6c7b863bb3735e81a8e6dc7
+      size: 4411
     outs:
     - path: models
       hash: md5
-      md5: 323d17e756794acba81032987e46f349.dir
+      md5: 8892cb3511d8bc01593c37212cdb2a29.dir
       size: 63
       nfiles: 1
