@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/418591468382662968
+creation_time: 1756365440549
+experiment_id: '418591468382662968'
+last_update_time: 1756365440549
+lifecycle_stage: active
+name: Titanic Survival Prediction

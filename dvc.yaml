@@ -14,4 +14,4 @@ stages:
     - data/processed
     - src/train_model.py
     outs:
-    - models/spark-logistic-regression
+    - models

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/418591468382662968/f5f6a91831194075bdd7c77a1a5d2feb/artifacts
+end_time: 1756365474137
+entry_point_name: ''
+experiment_id: '418591468382662968'
+lifecycle_stage: active
+run_id: f5f6a91831194075bdd7c77a1a5d2feb
+run_name: luminous-trout-570
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756365444635
+status: 3
+tags: []
+user_id: rajatsharma

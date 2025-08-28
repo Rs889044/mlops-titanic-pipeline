@@ -6,9 +6,9 @@ stages:
     deps:
     - path: data/raw
       hash: md5
-      md5: f18b03ef9f56c6b4258553691981a48e.dir
-      size: 90002
-      nfiles: 4
+      md5: d541f871e1606ddfad065b6df1d9a8f3.dir
+      size: 90534
+      nfiles: 5
     - path: src/process_data.py
       hash: md5
       md5: e634e75258a6c8fd28f7e3f380ed7112
@@ -16,8 +16,8 @@ stages:
     outs:
     - path: data/processed
       hash: md5
-      md5: 2bfbdb22e77e0fe0dd823d0bbcc8c908.dir
-      size: 20877
+      md5: 4d5f31894bea7285b4e5185c422c8505.dir
+      size: 20932
       nfiles: 8
   train_model:
     cmd: spark-submit src/train_model.py --input_path data/processed 
@@ -25,16 +25,16 @@ stages:
     deps:
     - path: data/processed
       hash: md5
-      md5: 2bfbdb22e77e0fe0dd823d0bbcc8c908.dir
-      size: 20877
+      md5: 4d5f31894bea7285b4e5185c422c8505.dir
+      size: 20932
       nfiles: 8
     - path: src/train_model.py
       hash: md5
-      md5: 4e7ba4e0efee4caefaf43c4a766f6970
-      size: 2452
+      md5: 5975253657dbeccd8336b33e01251320
+      size: 5143
     outs:
-    - path: models/spark-logistic-regression
+    - path: models
       hash: md5
-      md5: 2f0b16389fd907b68875ce1738707545.dir
-      size: 5520
-      nfiles: 8
+      md5: 323d17e756794acba81032987e46f349.dir
+      size: 63
+      nfiles: 1

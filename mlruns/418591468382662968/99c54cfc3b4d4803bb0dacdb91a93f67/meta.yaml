@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/418591468382662968/99c54cfc3b4d4803bb0dacdb91a93f67/artifacts
+end_time: 1756365776660
+entry_point_name: ''
+experiment_id: '418591468382662968'
+lifecycle_stage: active
+run_id: 99c54cfc3b4d4803bb0dacdb91a93f67
+run_name: unruly-toad-710
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756365750155
+status: 3
+tags: []
+user_id: rajatsharma
